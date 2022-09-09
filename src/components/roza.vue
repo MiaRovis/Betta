@@ -6,6 +6,7 @@
 <img id="roza_slika" class="card-img-top" src="@/assets/roza.png" height="350"/>
 </div>
 <div class="card-footer text-muted text-left">
+
 <p id="roza_tekst">Strawberry, rosemary, panthenol</p>
 
 </div>
@@ -14,7 +15,7 @@
 
 <script>
 export default{
- name: 'ZRoza',
+ name: 'Roza',
 };
 </script>
 
