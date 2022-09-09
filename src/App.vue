@@ -1,5 +1,5 @@
 <template>
-<div style=background:#d6bedd;>
+<div style=background:#bab8be;>
   <div id="app">
     <nav id="nav1">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -29,35 +29,45 @@
 font-family:'Times New Roman', Times, serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-color: #6e1562;
+color: #ffffff;
 
 }
 
 #nav1{
 
 padding: 30px;
-background-color: #d6bedd;
+background-color: #bab8be;
 
 }
 
 #nav2{
   padding:1px;
-  background-color:rgb(231, 217, 240);
+  background-color:rgb(120, 192, 188);
   border-radius:15px;
   
 }
 
 #naziv{
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
  
 #link1, #link2{
 
+  color: rgb(61, 95, 93);
   margin-left:50px;
-  font-size: 20px;
+  font-size: 17px;
+  font-family:fantasy;
     
 }
+
+#link3{
+
+  margin-left:150;
+  margin-right:30px;
+}
+
+
 
 
 
