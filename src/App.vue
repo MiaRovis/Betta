@@ -1,5 +1,6 @@
 <template>
-<div style=background:#bab8be;>
+ 
+<div id="pozadina" style=background:#c1c0c4fb;>
   <div id="app">
     <nav id="nav1">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -7,10 +8,12 @@
       <p id="naziv"><i><b>Shumpoo</b></i></p>
   <div class="collapse navbar-collapse" id="navbarToggledDemo02">
     <ul class="navbar-nav1 me-auto mb-2 mb-lg-0">
-      
-      <router-link id="link1" to="/MostPopular">Most popular</router-link>
+      <router-link id="link4" to="/AboutUs">About Us</router-link>
+      <router-link id="link1" to="/ShampooOffer">Shumpoos</router-link>
       <router-link id="link2" to="/CreateYourOwn">Create Your Own</router-link>
+      <router-link id="link3" to="/MyOrder">My order</router-link>
       
+    
     </ul> 
   </div>
   </div>
@@ -19,7 +22,13 @@
   <router-view/>
   </div>
 </div>
+
 </template>
+
+<script>
+document.body.style.backgroundColor="silver";
+
+</script>
 
 
 <style lang="scss">
@@ -36,7 +45,7 @@ color: #ffffff;
 #nav1{
 
 padding: 30px;
-background-color: #bab8be;
+background-color: #c1c0c4fb;
 
 }
 
@@ -52,7 +61,7 @@ background-color: #bab8be;
   font-size: 50px;
 }
  
-#link1, #link2{
+#link1, #link2, #link3, #link4{
 
   color: rgb(61, 95, 93);
   margin-left:50px;
@@ -61,11 +70,9 @@ background-color: #bab8be;
     
 }
 
-#link3{
 
-  margin-left:150;
-  margin-right:30px;
-}
+
+
 
 
 

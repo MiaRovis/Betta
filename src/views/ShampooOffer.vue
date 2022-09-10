@@ -1,18 +1,7 @@
 <template>
-<div class="container">
-    
- <div class="row">
-    <div class="col-1"></div>
-    <div class="col-5">
-        <zuta />
-    </div>
-    <div class="col-5">
-        <roza />
-    </div>
- </div>
+
  
- 
-</div>
+
 </template>
 
 <script>
