@@ -1,11 +1,16 @@
+
 <template>
-<div class="card">
-<div class="card-body p-0">
-<img id="roza_slika" class="card-img-top" src="@/assets/roza.png" height="350"/>
+    <div class="card">
+<div class="card-header text-left">
+<p id="naziv_ro">Rosie</p>
 </div>
+<div class="card-body p-0">
+<img id="roza_slika" class="card-img-top" src="@/assets/roza.png"/>
+</div>
+<div class="card-footer text-muted text-left">
+<p id="opis_ro">Rose oil, macadamia</p>
 
-<p id="roza_tekst">Strawberry, rosemary, panthenol</p>
-
+</div>
 </div>
 </template>
 
@@ -17,14 +22,16 @@ export default{
 
 <style lang="scss">
 #roza_slika{
-    margin-left:30px;
-   
-   
-
+    height:300px;
+    width: 140px;
 }
-#roza_tekst{
-    margin-left:15px;
-   
+#opis_ro{
+    margin:5px;
+}
+#naziv_ro{
+    margin:5px;
+    color:rgb(222, 157, 228);
 }
 
 </style>
+

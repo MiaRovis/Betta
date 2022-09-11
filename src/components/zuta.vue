@@ -1,14 +1,16 @@
+
 <template>
     <div class="card">
 <div class="card-header text-left">
+<p id="naziv_zu">Lemon</p>
 </div>
 <div class="card-body p-0">
-<img id="zuta_slika" class="card-img-top" src="@/assets/zuta.png" height="350"/>
+<img id="zuta_slika" class="card-img-top" src="@/assets/zuta.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="zuta_tekst">Lemongrass, panthenol</p>
-</div>
+<p id="opis_zu">Lemon, mandarine, panthenol</p>
 
+</div>
 </div>
 </template>
 
@@ -20,10 +22,16 @@ export default{
 
 <style lang="scss">
 #zuta_slika{
-    margin-left:30px;
+    height:300px;
+    width: 140px;
 }
-#zuta_tekst{
-margin-left:30px;
+#opis_zu{
+    margin:5px;
+}
+#naziv_zu{
+    margin:5px;
+    color:rgb(172, 182, 35);
 }
 
 </style>
+

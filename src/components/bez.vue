@@ -1,12 +1,14 @@
+
 <template>
     <div class="card">
-<div class="card-header" text-left>
+<div class="card-header text-left">
+<p id="naziv_be">Special</p>
 </div>
 <div class="card-body p-0">
-<img id="bez_slika" class="card-img-top" src="@/assets/bez.png" height="350"/>
+<img id="bez_slika" class="card-img-top" src="@/assets/bez.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="bez_tekst">Chamomille, green tea</p>
+<p id="opis_be">Coconut, scent free</p>
 
 </div>
 </div>
@@ -20,10 +22,16 @@ export default{
 
 <style lang="scss">
 #bez_slika{
-    margin-left:30px;
+    height:300px;
+    width: 140px;
 }
-#bez_tekst{
-    margin-left:30px;
+#opis_be{
+    margin:5px;
+}
+#naziv_be{
+    margin:5px;
+    color:rgb(201, 182, 141);
 }
 
 </style>
+

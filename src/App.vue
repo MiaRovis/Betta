@@ -59,6 +59,7 @@ background-color: #c1c0c4fb;
 #naziv{
   text-align: center;
   font-size: 50px;
+  margin: 30px 30px 30px 80px;
 }
  
 #link1, #link2, #link3, #link4{

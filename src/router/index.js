@@ -1,3 +1,5 @@
+import Vue from 'vue'
+import { VueElement } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 

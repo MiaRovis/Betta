@@ -1,36 +1,37 @@
+
 <template>
-    <div id="prazna" class="card">
+    <div class="card">
 <div class="card-header text-left">
-<p id="naziv_prazna">Create your own!</p>
+<p id="naziv_sv">Lavender</p>
 </div>
 <div class="card-body p-0">
-<img id="prazna_slika" class="card-img-top" src="@/assets/prazna.png"/>
+<img id="roza_slika" class="card-img-top" src="@/assets/SvLjubicasta.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-Diy
+<p id="opis_sv">Blueberry, panthenol</p>
+
 </div>
 </div>
 </template>
 
 <script>
 export default{
- name: 'Narancasta',
+ name: 'SvLjubicasta',
 };
 </script>
 
 <style lang="scss">
-#prazna_slika{
+#SvLjubicasta_slika{
     height:300px;
-    width: 200px;
+    width: 140px;
 }
-#opis_prazna{
+#opis_sv{
     margin:5px;
 }
-#naziv_prazna{
+#naziv_sv{
     margin:5px;
-    color:rgb(71, 71, 68);
+    color:rgb(175, 155, 187);
 }
-
 
 </style>
 

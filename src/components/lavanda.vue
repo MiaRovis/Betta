@@ -1,12 +1,14 @@
+
 <template>
     <div class="card">
-<div class="card-header" text-left>
+<div class="card-header text-left">
+<p id="naziv_la">Lavender dream</p>
 </div>
 <div class="card-body p-0">
-<img id="lavanda_slika" class="card-img-top" src="@/assets/lavanda.png" height="350"/>
+<img id="lavanda_slika" class="card-img-top" src="@/assets/lavanda.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="lavanda_tekst">Lavender, alantoin</p>
+<p id="opis_la">Lavander oil, mint</p>
 
 </div>
 </div>
@@ -20,10 +22,16 @@ export default{
 
 <style lang="scss">
 #lavanda_slika{
-    margin-left:30px;
+    height:300px;
+    width: 140px;
 }
-#lavanda_tekst{
-    margin-left:30px;
+#opis_la{
+    margin:5px;
+}
+#naziv_la{
+    margin:5px;
+    color:rgb(160, 130, 194);
 }
 
 </style>
+

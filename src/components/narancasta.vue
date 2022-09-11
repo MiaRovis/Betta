@@ -1,13 +1,13 @@
 <template>
     <div class="card">
-<div class="card-header" text-left>
+<div class="card-header text-left">
+<p id="naziv_nar">Orangie</p>
 </div>
 <div class="card-body p-0">
-<img id="narancasta_slika" class="card-img-top" src="@/assets/narancasta.png" height="350"/>
+<img id="narancasta_slika" class="card-img-top" src="@/assets/narancasta.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="narancasta_tekst">Mandarine, panthenol</p>
-
+<p id="opis_nar">Orange, panthenol</p>
 </div>
 </div>
 </template>
@@ -20,10 +20,16 @@ export default{
 
 <style lang="scss">
 #narancasta_slika{
-    margin-left:30px;
+    height:300px;
+    width: 140px;
 }
-#narancasta_tekst{
-    margin-left:30px;
+#opis_nar{
+    margin:5px;
+}
+#naziv_nar{
+    margin:5px;
+    color:rgb(182, 143, 16);
 }
 
 </style>
+
