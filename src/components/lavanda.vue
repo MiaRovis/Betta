@@ -2,7 +2,7 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_la">Lavender dream</p>
+<p id="naziv_la"><b>Lavander</b></p>
 </div>
 <div class="card-body p-0">
 <img id="lavanda_slika" class="card-img-top" src="@/assets/lavanda.png"/>
@@ -24,13 +24,15 @@ export default{
 #lavanda_slika{
     height:300px;
     width: 140px;
+   
 }
 #opis_la{
     margin:5px;
+    color:rgb(56, 87, 85);
 }
 #naziv_la{
     margin:5px;
-    color:rgb(160, 130, 194);
+    color:rgb(56, 87, 85);
 }
 
 </style>

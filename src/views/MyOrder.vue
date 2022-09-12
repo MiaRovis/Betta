@@ -9,7 +9,7 @@
         <input type="text" placeholder="Shampoo name">
         <input type="text" placeholder="Shampoo quantity (num)">
         <p id="upozorenje">We will never share your information with anyone else!</p>
-        <button class="btn"><b>Send my order!</b></button>
+        
     </div>
 </div>
 </template>
@@ -24,13 +24,7 @@
     background-color:beige;
     color:black;
 }
-.btn{
-    width:50%;
-    color:rgb(0, 0, 0);
-    margin-left:25%;
-    
-    
-}   
+ 
 .wraper{
     width:400px;
     margin:40px auto;

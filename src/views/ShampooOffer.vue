@@ -70,6 +70,9 @@ export default{
 
 <style lang="scss">
 .card{
-margin: 20px;
+margin: 10px;
+background-color:#c1c0c4fb;
+
 }
+
 </style>

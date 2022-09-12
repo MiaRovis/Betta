@@ -2,13 +2,13 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_be">Special</p>
+<p id="naziv_be"><b>Special</b></p>
 </div>
 <div class="card-body p-0">
 <img id="bez_slika" class="card-img-top" src="@/assets/bez.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_be">Coconut, scent free</p>
+<p id="opis_be">Coconut oil, scent free</p>
 
 </div>
 </div>
@@ -27,10 +27,11 @@ export default{
 }
 #opis_be{
     margin:5px;
+    color:rgb(56, 87, 85);
 }
 #naziv_be{
     margin:5px;
-    color:rgb(201, 182, 141);
+    color:rgb(56, 87, 85);
 }
 
 </style>

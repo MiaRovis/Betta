@@ -1,13 +1,13 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_nar">Orangie</p>
+<p id="naziv_nar"><b>Orangie</b></p>
 </div>
 <div class="card-body p-0">
 <img id="narancasta_slika" class="card-img-top" src="@/assets/narancasta.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_nar">Orange, panthenol</p>
+<p id="opis_nar">Orange, mandarine</p>
 </div>
 </div>
 </template>
@@ -25,10 +25,11 @@ export default{
 }
 #opis_nar{
     margin:5px;
+    color:rgb(56, 87, 85);
 }
 #naziv_nar{
     margin:5px;
-    color:rgb(182, 143, 16);
+    color:rgb(56, 87, 85);
 }
 
 </style>

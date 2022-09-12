@@ -1,14 +1,14 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_tz">Berry</p>
+<p id="naziv_tz"><b>Berry</b></p>
 </div>
 <div class="card-body p-0">
 <img id="tirkizna_slika" class="card-img-top" src="@/assets/tirkizna.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_tz">Blue rasberry, panthenol</p>
-<i>Most popular shumpoo</i>
+<p id="opis_tz">Blue rasberry</p>
+
 </div>
 </div>
 </template>
@@ -26,10 +26,11 @@ export default{
 }
 #opis_tz{
     margin:5px;
+    color:rgb(56, 87, 85);
 }
 #naziv_tz{
     margin:5px;
-    color:rgb(42, 146, 150);
+    color:rgb(56, 87, 85);
 }
 
 </style>

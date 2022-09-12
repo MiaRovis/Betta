@@ -1,13 +1,13 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_tr">Cherry</p>
+<p id="naziv_tr"><b>Cherry</b></p>
 </div>
 <div class="card-body p-0">
 <img id="tresnja_slika" class="card-img-top" src="@/assets/tresnja.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_tr">Cherry, alantoin, panthenol</p>
+<p id="opis_tr">Cherry</p>
 </div>
 </div>
 </template>
@@ -25,10 +25,11 @@ export default{
 }
 #opis_tr{
     margin:5px;
+    color:rgb(56, 87, 85);
 }
 #naziv_tr{
     margin:5px;
-    color:rgb(172, 51, 92);
+    color:rgb(56, 87, 85);
 }
 
 </style>
