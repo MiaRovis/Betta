@@ -8,7 +8,9 @@
 <img id="roza_slika" class="card-img-top" src="@/assets/roza.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_ro">Rose oil, macadamia</p>
+<p id="opis_ro">Scent: Rose</p>
+<p id="opis_ro">Contains: panthenol, allantoin, jojoba oil, argan oil, tea tree oil, aloe vera, macadamia oil, water </p>
+<p id="opis_ro"><b>Best for:</b> combination hair</p>
 
 </div>
 </div>
@@ -33,6 +35,7 @@ export default{
 #naziv_ro{
     margin:5px;
     color:rgb(56, 87, 85);
+    font-size:20px;
 }
 
 </style>

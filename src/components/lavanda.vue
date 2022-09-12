@@ -2,13 +2,15 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_la"><b>Lavander</b></p>
+<p id="naziv_la"><b>Lavender</b></p>
 </div>
 <div class="card-body p-0">
 <img id="lavanda_slika" class="card-img-top" src="@/assets/lavanda.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_la">Lavander oil, mint</p>
+<p id="opis_la">Scent: Lavender, mint</p>
+<p id="opis_la">Contains: panthenol, allantoin, jojoba oil, argan oil, lavender oil, peppermint oil, water</p>
+<p id="opis_la"><b>Best for:</b> all hair types, sensitive scalp</p>
 
 </div>
 </div>
@@ -33,6 +35,7 @@ export default{
 #naziv_la{
     margin:5px;
     color:rgb(56, 87, 85);
+    font-size:20px;
 }
 
 </style>

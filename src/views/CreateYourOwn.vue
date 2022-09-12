@@ -15,7 +15,7 @@
           <div class="col order-5">
           <h2>Hello! Welcome to <i>create your own <b>shumpoo!</b></i></h2>
           <h5>Here, you can add your own ingredients, for a custom made shumpoo!</h5>
-          <p id="lista">Please choose your hair type</p>
+          <p id="lista">My hair type is:</p>
 
             <ul class="list-group">
 

@@ -8,7 +8,9 @@
 <img id="zuta_slika" class="card-img-top" src="@/assets/zuta.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_zu">Lemon, green apple</p>
+<p id="opis_zu">Scent: Lemon, green apple</p>
+<p id="opis_zu">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, coco betaine, lauryl and cetyl alcohol, water</p>
+<p id="opis_zu"><b>Best for:</b> curly / wavy hair</p>
 
 </div>
 </div>
@@ -24,6 +26,7 @@ export default{
 #zuta_slika{
     height:300px;
     width: 140px;
+   
 }
 #opis_zu{
     margin:5px;
@@ -32,6 +35,7 @@ export default{
 #naziv_zu{
     margin:5px;
     color:rgb(56, 87, 85);
+    font-size:20px;
 }
 
 </style>

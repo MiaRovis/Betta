@@ -7,7 +7,9 @@
 <img id="narancasta_slika" class="card-img-top" src="@/assets/narancasta.png"/>
 </div>
 <div class="card-footer text-muted text-left">
-<p id="opis_nar">Orange, mandarine</p>
+<p id="opis_nar">Scent: Orange, mandarine</p>
+<p id="opis_nar">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, aloe vera, cetyl alcohol, rice amino acids, water</p>
+<p id="opis_nar"><b>Best for:</b> curly / wavy hair</p>
 </div>
 </div>
 </template>
@@ -30,6 +32,7 @@ export default{
 #naziv_nar{
     margin:5px;
     color:rgb(56, 87, 85);
+    font-size:20px;
 }
 
 </style>

@@ -24,9 +24,14 @@
  <h4 id="naslov2"><i><b>How do I order?</b></i></h4>
  <div id="opis" class="multiline">
   Since we do not offer log-in/sing-up option on our website, every order is processed as a <i>guest order</i>. Meaning, you can only order as a guest.<br/>
-  Once the products/products are addes to your order, we ask you to fill out your personal data so we know to who and where to ship the order. (Dont worry, we do not share your personal data with anyone else!)
+  Once the product/products are placed to your order, we ask you to fill out your personal data so we know to who and where to ship the order. (Dont worry, we do not share your personal data with anyone else!)
  <p></p>
 </div>
+<br/>
+<div id="kraj">
+Hope you enjoy!
+</div>
+<br/>
  
 </div>
 </template>
@@ -48,6 +53,12 @@
   margin-left:5%;
   font-size:20px;
   color:rgb(96, 99, 98);
+}
+#kraj{
+  font-size:35px;
+  margin-top:1%;
+  margin-left:45%;
+  color:rgb(21, 104, 97);
 }
 
 
