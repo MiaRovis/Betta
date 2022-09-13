@@ -1,20 +1,20 @@
 <template>
     <div class="container text-center">
    
-        <div class="row">
+        <div id="sve" class="row">
           <div class="col">
              <prazna/>
           <i><b>Disclaimer:</b></i> All of our shampoos are of 99% natural origin and do not contain harsh chemicals like sulfates and parabens.
             Every shampoo contains panthenol, allantoin and plant essential jojoba and argan oils.
           <p></p>
-          <h4 id="order">All done? Add your custom shampoo to your order by clicking on the "add to order" below.</h4>
+          <h4 id="order">All done? Add your custom shumpoo to your order by clicking on the "continue" below.</h4>
           <p></p>
-          <button type="button" class="btn" data-bs-toggle="button"><b>Add to order</b></button>
+          <router-link id="nar2" to="/Custom" tag="button">Continue</router-link>
           </div>
 
           <div class="col order-5">
           <h2>Hello! Welcome to <i>create your own <b>shumpoo!</b></i></h2>
-          <h5>Here, you can add your own ingredients, for a custom made shumpoo!</h5>
+          <h5>Here, you can add your own ingredients, for a custom made <i>shumpoo!</i></h5>
           <p id="lista">My hair type is:</p>
 
             <ul class="list-group">
@@ -42,7 +42,7 @@
             </ul>
 
             <p></p>
-            <p id="lista">I would like my shampoo scent to be:</p>
+            <p id="lista">I would like my shumpoo scent to be:</p>
 
             <ul class="list-group">
 
@@ -131,5 +131,14 @@ margin-right:15px;
 }
 #order{
 color:rgb(39, 63, 61);
+}
+#sve{
+  margin-bottom:25px;
+}
+#nar2{
+  color:rgb(39, 63, 61);
+  margin-right:5%;
+  font-size:20px;
+  
 }
 </style>

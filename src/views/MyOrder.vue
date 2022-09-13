@@ -2,6 +2,7 @@
 <div id="order">
 
     <div class="wraper">
+        <p id="sm">Shampoo type: Original formula</p>
         <input type="text" placeholder="Name">
         <input type="text" placeholder="Surname">
         <input type="text" placeholder="E-mail">
@@ -9,15 +10,24 @@
         <input type="text" placeholder="Shampoo name">
         <input type="text" placeholder="Shampoo quantity (num)">
         <p id="upozorenje">We will never share your information with anyone else!</p>
-        
+        <router-link id="nar" to="/Order" tag="button">Confirm order!</router-link>
     </div>
+
 </div>
 </template>
 
 <style lang="scss">
+#sm{
+    font-size:20px;
+    color:rgb(27, 131, 122);
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:20px;
+}
 #upozorenje{
         color:rgb(184, 33, 33);
         margin-left:20px;
+        margin-top:20px;
     }
 
 .body{
@@ -52,6 +62,12 @@ input[type="text"]:focus{
     text-align:center;
     font-size:40px;
     color: black;
+}
+#nar{
+    color:black;
+    margin-left:35%;
+    
+    
 }
 
 

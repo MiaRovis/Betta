@@ -1,6 +1,6 @@
 <template>
     <div id="ord">
-    <h1>Thank you for you order!</h1>
+    <h1>Thank you for you custom shumpoo order!</h1>
     <h3>We will make sure it gets to you safely and in the shortest amount of time!</h3>
     <p id="ar">Estimated arrival: 3-5 business days.</p><br/>
     <p id="zhv">Thank you for choosing <i><b>shumpoo!</b></i></p><br/>
