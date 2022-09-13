@@ -10,6 +10,7 @@
 <p id="opis_nar">Scent: Orange, mandarine</p>
 <p id="opis_nar">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, aloe vera, cetyl alcohol, rice amino acids, water</p>
 <p id="opis_nar"><b>Best for:</b> curly / wavy hair</p>
+<p id="cijena">Price: 25€ / 500mL</p>
 </div>
 </div>
 </template>
@@ -33,6 +34,10 @@ export default{
     margin:5px;
     color:rgb(56, 87, 85);
     font-size:20px;
+}
+#cijena{
+    margin-top:15px;
+    color:black;
 }
 
 </style>

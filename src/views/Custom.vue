@@ -2,7 +2,7 @@
     <div id="order">
     
         <div class="wraper">
-            <p id="cs">Shumpoo type: Custom made</p>
+            <p id="cs">Shumpoo type: Custom made<br/>Price: 25€ + 2€ per ingredient</p>
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Surname">
             <input type="text" placeholder="E-mail">
@@ -30,7 +30,7 @@
             margin-left:20px;
         }
     
-    .body{
+    body{
         background-color:beige;
         color:black;
     }

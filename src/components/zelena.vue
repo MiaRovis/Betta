@@ -11,6 +11,7 @@
 <p id="opis_ze">Scent: Lime, cedar</p>
 <p id="opis_ze">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, avocado oil, clay, water</p>
 <p id="opis_ze"><b>Best for:</b> Split ends </p>
+<p id="cijena">Price: 25€ / 500mL</p>
 
 </div>
 </div>
@@ -35,6 +36,10 @@ export default{
     margin:5px;
     color:rgb(56, 87, 85);
     font-size:20px;
+}
+#cijena{
+    margin-top:15px;
+    color:black;
 }
 
 </style>

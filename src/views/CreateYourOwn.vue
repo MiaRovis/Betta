@@ -4,10 +4,12 @@
         <div id="sve" class="row">
           <div class="col">
              <prazna/>
-          <i><b>Disclaimer:</b></i> All of our shampoos are of 99% natural origin and do not contain harsh chemicals like sulfates and parabens.
+          <i><b>Disclaimer:</b></i> All of our shampoos are of 98% natural origin and do not contain harsh chemicals like sulfates and parabens.
             Every shampoo contains panthenol, allantoin and plant essential jojoba and argan oils.
-          <p></p>
-          <h4 id="order">All done? Add your custom shumpoo to your order by clicking on the "continue" below.</h4>
+          
+          <p id="cijcu"><b>Price of a custom shampoo: 25€ + 2€ per added ingredient</b></p>
+          <br/>
+          <h4 id="order">All done? Add your custom shumpoo to your order by clicking on the <b>"continue"</b> below.</h4>
           <p></p>
           <router-link id="nar2" to="/Custom" tag="button">Continue</router-link>
           </div>
@@ -116,6 +118,12 @@ export default{
 </script>
    
 <style lang="scss">
+#cijcu{
+  color:black;
+  margin-top:20px;
+  font-family:'Courier New', Courier, monospace;
+  font-size:20px;
+}
 .card{
 margin: 20px;
 }
@@ -133,7 +141,7 @@ margin-right:15px;
 color:rgb(39, 63, 61);
 }
 #sve{
-  margin-bottom:25px;
+  margin-bottom:50px;
 }
 #nar2{
   color:rgb(39, 63, 61);

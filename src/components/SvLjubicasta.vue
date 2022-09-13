@@ -11,7 +11,7 @@
 <p id="opis_sv">Scent: Blueberry</p>
 <p id="opis_sv">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, hemp seed oil, honey, coco betaine, lauryl and cetyl alcohol, water</p>
 <p id="opis_sv"><b>Best for:</b> all hair types</p>
-
+<p id="cijena">Price: 25€ / 500mL</p>
 </div>
 </div>
 </template>
@@ -35,6 +35,10 @@ export default{
     margin:5px;
     color:rgb(56, 87, 85);
     font-size:20px;
+}
+#cijena{
+    margin-top:15px;
+    color:black;
 }
 
 </style>

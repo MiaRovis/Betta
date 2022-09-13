@@ -11,6 +11,7 @@
 <p id="opis_ro">Scent: Rose</p>
 <p id="opis_ro">Contains: panthenol, allantoin, jojoba oil, argan oil, tea tree oil, aloe vera, macadamia oil, water </p>
 <p id="opis_ro"><b>Best for:</b> combination hair</p>
+<p id="cijena">Price: 25€ / 500mL</p>
 
 </div>
 </div>
@@ -36,6 +37,10 @@ export default{
     margin:5px;
     color:rgb(56, 87, 85);
     font-size:20px;
+}
+#cijena{
+    margin-top:15px;
+    color:black;
 }
 
 </style>

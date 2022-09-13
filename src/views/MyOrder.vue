@@ -2,7 +2,7 @@
 <div id="order">
 
     <div class="wraper">
-        <p id="sm">Shampoo type: Original formula</p>
+        <p id="sm">Shampoo type: Original formula<br/>Price: 25€ per shumpoo</p>
         <input type="text" placeholder="Name">
         <input type="text" placeholder="Surname">
         <input type="text" placeholder="E-mail">

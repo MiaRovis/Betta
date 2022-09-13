@@ -10,6 +10,7 @@
 <p id="opis_tr">Scent: Cherry</p>
 <p id="opis_zu">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, honey, lauris acid, water </p>
 <p id="opis_zu"><b>Best for:</b> straight hair</p>
+<p id="cijena">Price: 25€ / 500mL</p>
 </div>
 </div>
 </template>
@@ -34,6 +35,11 @@ export default{
     color:rgb(56, 87, 85);
     font-size:20px;
 }
+#cijena{
+    margin-top:15px;
+    color:black;
+}
+
 
 </style>
 

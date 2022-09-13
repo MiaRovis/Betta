@@ -12,7 +12,7 @@
   Here, at <i>Shumpoo</i> you have the ability to choose your perfect shampoo from our offer, or you can make one yourself!<br/>
   We carefully review every ingredient for safety and performance.<br/>
   All of our products undergo testing process under dermatological control and each step of formulation follows quaility control protocols.<br/>
-  The shampoos are of 99% natural origin and do not contain harsh chemicals like sulfates and parabens. Every shampoo contains panthenol, allantoin and plant essential jojoba and argan oils.
+  The shampoos are of 98% natural origin and do not contain harsh chemicals like sulfates and parabens. Every shampoo contains panthenol, allantoin and plant essential jojoba and argan oils.
  </div>
  <br/>
  <h4 id="naslov2"><i><b>What are custom made shampoos?</b></i></h4>

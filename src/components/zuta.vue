@@ -11,6 +11,7 @@
 <p id="opis_zu">Scent: Lemon, green apple</p>
 <p id="opis_zu">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, coco betaine, lauryl and cetyl alcohol, water</p>
 <p id="opis_zu"><b>Best for:</b> curly / wavy hair</p>
+<p id="cijena">Price: 25€ / 500mL</p>
 
 </div>
 </div>
@@ -36,6 +37,10 @@ export default{
     margin:5px;
     color:rgb(56, 87, 85);
     font-size:20px;
+}
+#cijena{
+    margin-top:15px;
+    color:black;
 }
 
 </style>

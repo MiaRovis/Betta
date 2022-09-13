@@ -11,6 +11,7 @@
 <p id="opis_la">Scent: Lavender, mint</p>
 <p id="opis_la">Contains: panthenol, allantoin, jojoba oil, argan oil, lavender oil, peppermint oil, water</p>
 <p id="opis_la"><b>Best for:</b> all hair types, sensitive scalp</p>
+<p id="cijena">Price: 25€ / 500mL</p>
 
 </div>
 </div>
@@ -37,6 +38,9 @@ export default{
     color:rgb(56, 87, 85);
     font-size:20px;
 }
-
+#cijena{
+    margin-top:15px;
+    color:black;
+}
 </style>
 

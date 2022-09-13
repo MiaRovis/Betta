@@ -10,7 +10,7 @@
 <p id="opis_tz">Scent: Blue rasberry</p>
 <p id="opis_tz">Contains: panthenol, allantoin, jojoba oil, argan oil, glycerin, dimethicone, water </p>
 <p id="opis_tz"><b>Best for:</b> dull hair with no shine</p>
-
+<p id="cijena">Price: 25€ / 500mL</p>
 </div>
 </div>
 </template>
@@ -35,6 +35,9 @@ export default{
     color:rgb(56, 87, 85);
     font-size:20px;
 }
-
+#cijena{
+    margin-top:15px;
+    color:black;
+}
 </style>
 

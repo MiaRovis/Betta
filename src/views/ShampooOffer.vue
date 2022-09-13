@@ -72,7 +72,6 @@ export default{
 .card{
 margin: 10px;
 background-color:#c1c0c4fb;
-
 }
 
 </style>
