@@ -13,6 +13,8 @@
       <router-link id="link1" to="/ShampooOffer">Shumpoos</router-link>
       <router-link id="link2" to="/CreateYourOwn">Create Your Own</router-link>
       <router-link id="link3" to="/MyOrder">My order</router-link>
+      <router-link id="link4" to="/login">Restricted</router-link>
+      <router-link id="link4" to="/proba">proba</router-link>
     </ul> 
   </div>
 
@@ -64,5 +66,6 @@ background-color: #c1c0c4fb;
   font-size: 17px;
   font-family:fantasy;
 }
+
 
 </style>
