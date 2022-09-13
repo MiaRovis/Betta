@@ -17,7 +17,7 @@
  <br/>
  <h4 id="naslov2"><i><b>What are custom made shampoos?</b></i></h4>
  <div id="opis" class="multiline">
-  Well, our <i>custom made</i> shampoo option, offers our customers the ability to add special ingredients and scents to our original shampoo formula.<br/>
+  Well, our <i>custom made</i> shampoo option, offers our customers the ability to add special ingredients and scents to our <b>original shampoo formula.</b><br/>
   Also, you are able to select type of your hair, so we know what to change in the formula depending on your hair type.
  </div>
  <br/>
