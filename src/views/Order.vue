@@ -8,6 +8,8 @@
     </div>
 </template>
 
+
+
 <style lang="scss">
 #ord{
     margin-top:2%;

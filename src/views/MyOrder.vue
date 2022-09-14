@@ -3,18 +3,20 @@
 
     <div class="wraper">
         <p id="sm">Shampoo type: Original formula<br/>Price: 25€ per shumpoo</p>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Surname">
-        <input type="text" placeholder="E-mail">
-        <input type="text" placeholder="Home Adress">
-        <input type="text" placeholder="Shampoo name">
-        <input type="text" placeholder="Shampoo quantity (num)">
+        <input type="text"  placeholder="Name">
+        <input type="text"  placeholder="Surname">
+        <input type="text"  placeholder="E-mail">
+        <input type="text"  placeholder="Home Adress">
+        <input type="text"  placeholder="Shampoo name">
+        <input type="text"  placeholder="Shampoo quantity (num)">
         <p id="upozorenje">We will never share your information with anyone else!</p>
         <router-link id="nar" to="/Order" tag="button">Confirm order!</router-link>
     </div>
 
 </div>
 </template>
+
+
 
 <style lang="scss">
 #sm{

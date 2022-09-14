@@ -3,6 +3,7 @@ import { VueElement } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 
+
 const routes = [
   
   {
@@ -44,7 +45,7 @@ const routes = [
     path: '/CustomOrder',
     name: 'CustomOrder',
     component: () => import(/* webpackChunkName: "about" */ '../views/CustomOrder.vue')
-  },
+  },  
   {
     path: '/login',
     name: 'login',

@@ -7,7 +7,7 @@
         <br/>
     <form>
     <div class="form-group">
-    <p id="admin"><u>Admin-only access</u></p>
+    <p id="admin"><b>Log-in</b></p>
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" v-model="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
     </div>
@@ -30,7 +30,9 @@
    </template>
 
    <script>
-    import {firebase} from "@firebase";
+    import { firebase } from '@/firebase';
+    import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
     export default {
         name: "login",
         data() {
@@ -41,21 +43,23 @@
         },
         methods: {
             login(){
-// primjer - pristup varijabli  alert(this.username);
-
-
+                const auth = getAuth();
+                createUserWithEmailAndPassword(auth, this.username, this.password).then(
+                    function(){
+                        console.log('uspješna registracija');
+                    });
             },
         },
     };
-
 
    </script>
 
 
    <style lang="scss">
     #admin{
-        font-size:20px;
-        color:rgb(168, 46, 16);
+        font-size:30px;
+        color:rgb(250, 246, 245);
+        
     }
     #loz{
         margin-top:10px;
