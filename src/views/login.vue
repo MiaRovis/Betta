@@ -18,7 +18,7 @@
     <input type="password" v-model="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
     </div>
     <br/>
-    <router-link id="log" to="/zalihe" tag="Button">Login</router-link>
+    <button type="button" @click="login" class="btn btn-primary">Submit</button>
     <br/>
     
     </form>
@@ -28,6 +28,29 @@
     </div>
     </div>
    </template>
+
+   <script>
+    import {firebase} from "@firebase";
+    export default {
+        name: "login",
+        data() {
+            return {
+                username:"",
+                password:"",
+            };
+        },
+        methods: {
+            login(){
+// primjer - pristup varijabli  alert(this.username);
+
+
+            },
+        },
+    };
+
+
+   </script>
+
 
    <style lang="scss">
     #admin{
