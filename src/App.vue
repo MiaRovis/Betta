@@ -13,7 +13,7 @@
       <router-link id="link" to="/ShampooOffer">Shumpoos</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
-      <a href="#" @click="logout()" id="link2">Log-out</a>
+      <a v-if="store.currentUser" href="#" @click="logout()" id="link2">Log-out</a>
     </ul>
   </div>
   </div>
