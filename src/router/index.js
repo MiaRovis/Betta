@@ -6,7 +6,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import store from '@/store';
 
 
-
 const routes = [
   
   {
@@ -61,11 +60,7 @@ const routes = [
     name: 'login',
     component: () => import(/* webpackChunkName: "login" */ '../views/login.vue')
   },
-  {
-    path: '/logout',
-    name: 'logout',
-    component: () => import(/* webpackChunkName: "logout" */ '../views/logout.vue')
-  },
+  
   
 ]
 
@@ -73,7 +68,5 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-
-
 
 export default router;

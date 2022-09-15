@@ -11,6 +11,7 @@
     <ul class="navbar-nav ml-auto">
       <router-link id="link" to="/AboutUs">About Us</router-link>
       <router-link id="link" to="/ShampooOffer">Shumpoos</router-link>
+      <router-link v-if="store.currentUser" id="link2" to="/MyOrder">Order</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
       <a v-if="store.currentUser" href="#" @click="logout()" id="link2">Log-out</a>
@@ -26,6 +27,7 @@
 
 <script>
 document.body.style.backgroundColor="silver";
+
 import store from '@/store';
 import router from '@/router';
 import { firebase } from '@/firebase';

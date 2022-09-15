@@ -2,11 +2,7 @@
 <div id="order">
 
     <div class="wraper">
-        <p id="sm">Shampoo type: Original formula<br/>Price: 25€ per shumpoo</p>
-        <input type="text"  placeholder="Name">
-        <input type="text"  placeholder="Surname">
-        <input type="text"  placeholder="E-mail">
-        <input type="text"  placeholder="Home Adress">
+        <p id="sm">Shampoo type: Original formula<br/>Price: 25€ per shumpoo (500mL)</p>
         <input type="text"  placeholder="Shampoo name">
         <input type="text"  placeholder="Shampoo quantity (num)">
         <p id="upozorenje">We will never share your information with anyone else!</p>
@@ -15,6 +11,11 @@
 
 </div>
 </template>
+
+<script>
+
+
+</script>
 
 
 
