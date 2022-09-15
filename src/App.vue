@@ -8,24 +8,13 @@
       <p id="naziv"><i><b>Shumpoo</b></i></p>
 
   <div class="collapse navbar-collapse" id="navbarToggledDemo02">
-    <ul class="navbar-nav1 me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
+    <ul class="navbar-nav ml-auto">
       <router-link id="link" to="/AboutUs">About Us</router-link>
-    </li>
-    <li class="nav-item">
       <router-link id="link" to="/ShampooOffer">Shumpoos</router-link>
-    </li>
-    <li v-if="!store.currentUser" class="nav-item">
-      <router-link id="link2" to="/signup">Sign-Up</router-link>
-    </li>
-    <li v-if="!store.currentUser" class="nav-item">
-      <router-link id="link2" to="/login">Log-in</router-link>
-    </li>
-    <li v-if="store.currentUser" class="nav-item">
+      <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
+      <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
       <a href="#" @click="logout()" id="link2">Log-out</a>
-    </li>
-  
-    </ul> 
+    </ul>
   </div>
   </div>
     </nav>
@@ -40,7 +29,7 @@ document.body.style.backgroundColor="silver";
 import store from '@/store';
 import router from '@/router';
 import { firebase } from '@/firebase';
-import { currentUser, signOut, getAuth, onAuthStateChanged } from "firebase/auth";
+import { signOut, getAuth, onAuthStateChanged } from "firebase/auth";
 
 const auth = getAuth();
 

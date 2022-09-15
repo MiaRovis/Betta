@@ -5,8 +5,6 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
-
-
 const firebaseConfig = {
     apiKey: "AIzaSyAeDerDiKMT4RE-Oq0-UifIRPs5xzVJr_A",
     authDomain: "shumpoo-8aba4.firebaseapp.com",
@@ -20,4 +18,6 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
-  export { firebase };
+  let db = firebase.firestore;
+
+  export { firebase, db };
