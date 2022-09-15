@@ -23,8 +23,8 @@
  <br/>
  <h4 id="naslov2"><i><b>How do I order?</b></i></h4>
  <div id="opis" class="multiline">
-  Since we do not offer log-in/sing-up option on our website, every order is processed as a <i>guest order</i>. Meaning, you can only order as a guest.<br/>
-  Once the product/products are placed to your order, we ask you to fill out your personal data so we know to who and where to ship the order. (Dont worry, we do not share your personal data with anyone else!)
+  You can order your shumpoo by, firstly, loging in or signing up if you don't already have an account.<br/>
+  The next step is choosing the right shumpoo for you and placing an order.
  <p></p>
 </div>
 <br/>

@@ -1,6 +1,6 @@
 <template>
  <div class="container text-center">
-
+  
       <div class="row">
         <div class="col">
           <zuta/>
@@ -72,6 +72,11 @@ export default{
 .card{
 margin: 10px;
 background-color:#c1c0c4fb;
+}
+#sl{
+color:rgb(12, 97, 86);
+font-size:15px;
+
 }
 
 </style>
