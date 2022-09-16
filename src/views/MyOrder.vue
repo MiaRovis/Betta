@@ -2,19 +2,38 @@
 <div id="order">
 
     <div class="wraper">
-        <p id="sm">Shampoo type: Original formula<br/>Price: 25€ per shumpoo (500mL)</p>
-        <input type="text"  placeholder="Shampoo name">
-        <input type="text"  placeholder="Shampoo quantity (num)">
+        <p id="sm">Shumpoo type: Original formula<br/>Price: 25€ per shumpoo (500mL)</p>
+        <input v-model="NewShumpooName" type="text"  placeholder="Shumpoo name">
+        <input v-model="NewShumpooQuantity" type="text"  placeholder="Shumpoo quantity (num)">
         <p id="upozorenje">We will never share your information with anyone else!</p>
-        <router-link id="nar" to="/Order" tag="button">Confirm order!</router-link>
+        <button id="ord" type="button" @click="SaveOrder()" class="btn btn-secondary">Order!</button>
     </div>
 
 </div>
 </template>
 
 <script>
+import { firebase } from '@/firebase';
+import store from '@/store';
+import { db } from '@/firebase';
+import { collection, doc, getFirestore, setDoc } from "firebase/firestore"; 
 
-
+export default{
+    name: 'MyOrder',
+    data: function() {
+        return {
+            store,
+            NewShumpooName: "",
+            NewShumpooQuantity: "",
+        };
+    },
+    methods: {
+        SaveOrder() {
+        
+        
+        },
+    },
+};
 </script>
 
 
@@ -66,11 +85,8 @@ input[type="text"]:focus{
     font-size:40px;
     color: black;
 }
-#nar{
-    color:black;
-    margin-left:35%;
-    
-    
+#ord{
+    margin-left:38%;
 }
 
 

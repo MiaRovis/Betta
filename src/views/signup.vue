@@ -48,6 +48,7 @@
                 username:"",
                 password:"",
                 passwordRepeat:"",
+                
             };
         },
     methods:{
