@@ -1,4 +1,4 @@
-# shumpoo
+# Betta
 
 ## Project setup
 ```
