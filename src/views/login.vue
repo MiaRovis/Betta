@@ -20,7 +20,7 @@
     <br/>
     </div>
  
-    <button type="button" @click="login()" class="btn btn-primary">Submit</button>
+    <button type="button" @click="login()" class="btn btn-secondary">Submit</button>
     <br/>
     
     </form>
@@ -70,7 +70,7 @@ export default{
 <style lang="scss">
 #admin{
     font-size:30px;
-    color:rgb(250, 246, 245);
+    color:rgb(93, 92, 165);
 }
 
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div>
- <h1 id="naslov"> Welcome to <i>Shumpoo</i>!</h1>
+ <h1 id="naslov"> Welcome to <i>Betta</i>!</h1>
 
- <h4 id="naslov1"> We are a cruelty free organization made to please the needs of your hair.</h4>
+ <h4 id="naslov1"> We are a cruelty free organization made to help educate and raise awareness about the siamese fighter fish.</h4>
  <br/>
  <br/>
  
@@ -47,7 +47,7 @@ Hope you enjoy!
 }
 #naslov2, #naslov3{
   margin-left:5%;
-  color:rgb(61, 95, 93);
+  color:rgb(93, 92, 165);
 }
 #opis{
   margin-left:5%;
@@ -58,7 +58,7 @@ Hope you enjoy!
   font-size:35px;
   margin-top:1%;
   margin-left:45%;
-  color:rgb(21, 104, 97);
+  color:rgb(93, 92, 165);
 }
 
 

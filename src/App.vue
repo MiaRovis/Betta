@@ -1,18 +1,17 @@
 <template>
-<div id="pozadina" style="background:#c1c0c4fb">
+<div id="pozadina" style="background:rgb(216, 209, 231);">
   <div id="app">
     <nav id="nav1">
     <nav class="navbar navbar-expand-lg navbar-light">
 
   <div class="container-fluid" id="nav2">
-      <p id="naziv"><i><b>Shumpoo</b></i></p>
+      <p id="naziv"><i><b>Betta</b> - the fighter fish</i></p>
 
   <div class="collapse navbar-collapse" id="navbarToggledDemo02">
     <ul class="navbar-nav ml-auto">
       <router-link id="link" to="/AboutUs">About Us</router-link>
-      <router-link id="link" to="/ShampooOffer">Shumpoos</router-link>
+      <router-link v-if="store.currentUser" id="link" to="/BettaOffer">Selection</router-link>
       <router-link v-if="store.currentUser" id="link" to="/MyFavorites">My Favorites</router-link>
-      <router-link v-if="store.currentUser" id="link2" to="/MyOrder">Order</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
       <a v-if="store.currentUser" href="#" @click="logout()" id="link2">Log-out</a>
@@ -27,8 +26,7 @@
 </template>
 
 <script>
-document.body.style.backgroundColor="silver";
-
+document.body.style.backgroundColor="rgb(216, 209, 231)";
 import store from '@/store';
 import router from '@/router';
 import { firebase } from '@/firebase';
@@ -79,12 +77,12 @@ color: #ffffff;
 
 #nav1{
 padding: 30px;
-background-color: #c1c0c4fb;
+background-color: rgb(216, 209, 231);
 }
 
 #nav2{
   padding:1px;
-  background-color:rgb(120, 192, 188);
+  background-color:rgb(93, 92, 165);
   border-radius:15px;
 }
 
@@ -95,16 +93,16 @@ background-color: #c1c0c4fb;
 }
  
 #link{
-  color: rgb(61, 95, 93);
+  color: rgb(216, 209, 231);
   margin-left:50px;
   font-size: 17px;
-  font-family:fantasy;
+  font-family:'Times New Roman', Times, serif;
 }
 #link2{
-  color: rgb(61, 95, 93);
+  color: rgb(216, 209, 231);
   margin-left:50px;
   font-size: 17px;
-  font-family:fantasy;
+  font-family:'Times New Roman', Times, serif;
 
 }
 

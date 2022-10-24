@@ -21,35 +21,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "AboutUs" */ '../views/AboutUs.vue')
   },
   {
-    path: '/ShampooOffer',
-    name: 'ShampooOffer',
-    component: () => import(/* webpackChunkName: "ShampooOffer" */ '../views/ShampooOffer.vue')
+    path: '/BettaOffer',
+    name: 'BettaOffer',
+    component: () => import(/* webpackChunkName: "ShampooOffer" */ '../views/BettaOffer.vue')
   },
-  {
-    path: '/CreateYourOwn',
-    name: 'CreateYourOwn',
-    component: () => import(/* webpackChunkName: "CreateYourOwn" */ '../views/CreateYourOwn.vue')
-  },
-  {
-    path: '/MyOrder',
-    name: 'MyOrder',
-    component: () => import(/* webpackChunkName: "MyOrder" */ '../views/MyOrder.vue')
-  },
-  {
-    path: '/Order',
-    name: 'Order',
-    component: () => import(/* webpackChunkName: "Order" */ '../views/Order.vue')
-  },
-  {
-    path: '/Custom',
-    name: 'Custom',
-    component: () => import(/* webpackChunkName: "Custom" */ '../views/Custom.vue')
-  },
-  {
-    path: '/CustomOrder',
-    name: 'CustomOrder',
-    component: () => import(/* webpackChunkName: "CustomOrder" */ '../views/CustomOrder.vue')
-  },  
   {
     path: '/signup',
     name: 'signup',

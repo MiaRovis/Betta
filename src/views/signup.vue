@@ -26,7 +26,7 @@
     <input type="password" v-model="passwordRepeat" class="form-control" id="exampleInputPassword2" placeholder="Password" /><br/>
     </div>
  
-    <button type="button" @click="signup()" class="btn btn-primary">Submit</button>
+    <button type="button" @click="signup()" class="btn btn-secondary">Submit</button>
     <br/>
     
     </form>
@@ -68,7 +68,7 @@
 <style lang="scss">
 #admin{
     font-size:30px;
-    color:rgb(250, 246, 245);
+    color:rgb(93, 92, 165);
 }
 #loz{
     margin-top:10px;
@@ -79,7 +79,7 @@
     margin-left:40%;
 }
 #pass,#mail{
-    color:rgb(206, 20, 20);
+    color:rgb(230, 54, 54);
     margin-bottom:0px;
 }
 </style>
