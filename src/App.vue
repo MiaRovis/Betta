@@ -5,12 +5,14 @@
     <nav class="navbar navbar-expand-lg navbar-light">
 
   <div class="container-fluid" id="nav2">
-      <p id="naziv"><i><b>Betta</b> - the fighter fish</i></p>
+      <p id="naziv"><i><b>Scape</b></i></p>
 
   <div class="collapse navbar-collapse" id="navbarToggledDemo02">
     <ul class="navbar-nav ml-auto">
       <router-link id="link" to="/AboutUs">About Us</router-link>
-      <router-link v-if="store.currentUser" id="link" to="/BettaOffer">Selection</router-link>
+      <router-link  id="link" to="/BettaOffer">Bettas</router-link>
+      <router-link  id="link" to="/TetraOffer">Tetras</router-link>
+      <router-link  id="link" to="/RasboraOffer">Rasboras</router-link>
       <router-link v-if="store.currentUser" id="link" to="/MyFavorites">My Favorites</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
@@ -105,6 +107,7 @@ background-color: rgb(216, 209, 231);
   font-family:'Times New Roman', Times, serif;
 
 }
+
 
 
 </style>

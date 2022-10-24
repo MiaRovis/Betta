@@ -3,10 +3,10 @@
   
       <div class="row">
         <div class="col">
-          
+         <icon/> 
         </div>
         <div class="col order-5">
-         
+        <superdelta />
         </div>
         <div class="col order-1">
           
@@ -41,6 +41,14 @@
 </template>
 
 <script>
+import superdelta from '@/components/superdelta.vue';
+
+export default{
+  name: 'Betta Offer',
+  components: {
+    superdelta
+  },
+};
 
 
 </script>

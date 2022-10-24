@@ -1,30 +1,29 @@
 <template>
   <div>
- <h1 id="naslov"> Welcome to <i>Betta</i>!</h1>
+ <h1 id="naslov"> Welcome to <i>Scape</i>!</h1>
 
- <h4 id="naslov1"> We are a cruelty free organization made to help educate and raise awareness about the siamese fighter fish.</h4>
+ <h4 id="naslov1">opis stranice</h4>
  <br/>
  <br/>
  
- <h4 id="naslov2"><i><b>How We Function:</b></i></h4>
+ <h4 id="naslov2"><i><b>naslov2</b></i></h4>
  <div id="opis" class="multiline">
-  Everybody is different, so we want to make sure everyone gets the right treatment.<br/>
-  Here, at <i>Shumpoo</i> you have the ability to choose your perfect shampoo from our offer, or you can make one yourself!<br/>
-  We carefully review every ingredient for safety and performance.<br/>
-  All of our products undergo testing process under dermatological control and each step of formulation follows quaility control protocols.<br/>
-  The shampoos are of 98% natural origin and do not contain harsh chemicals like sulfates and parabens. Every shampoo contains panthenol, allantoin and plant essential jojoba and argan oils.
+  opis2<br/>
+  opis3<br/>
+  opis4<br/>
+  opis5
  </div>
  <br/>
- <h4 id="naslov2"><i><b>What are custom made shampoos?</b> (Coming soon)</i></h4>
+ <h4 id="naslov3"><i><b>naslov 2</b></i></h4>
  <div id="opis" class="multiline">
-  Well, our <i>custom made</i> shampoo option, offers our customers the ability to add special ingredients and scents to our <b>original shampoo formula.</b><br/>
-  Also, you are able to select type of your hair, so we know what to change in the formula depending on your hair type.
+  opis6<br/>
+  opis7
  </div>
  <br/>
- <h4 id="naslov2"><i><b>How do I order?</b></i></h4>
+ <h4 id="naslov2"><i><b>How do I publish my own photo?</b></i></h4>
  <div id="opis" class="multiline">
-  You can order your shumpoo by, firstly, loging in or signing up if you don't already have an account.<br/>
-  The next step is choosing the right shumpoo for you and placing an order.
+  You can post your fish by, firstly, loging in or signing up if you don't already have an account.<br/>
+  drugi korak
  <p></p>
 </div>
 <br/>
