@@ -1,10 +1,10 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="nazivc"><b>Comb Tail</b></p>
+<p id="nazivru"><b>Rummy</b></p>
 </div>
 <div class="card-body p-0">
-<img id="combtail" class="card-img-top" src="@/assets/combtail.jpg"/>
+<img id="rummy" class="card-img-top" src="@/assets/rummy.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
     <p>View more</p>
@@ -14,16 +14,16 @@
 
 <script>
 export default{
- name: 'combtail',
+ name: 'rummy',
 };
 </script>
 
 <style lang="scss">
-#combtail{
+#rummy{
     height:300px;
     width: 350px;
 }
-#nazivc{
+#nazivru{
     margin:5px;
     color:rgb(93, 92, 165);
     font-size:20px;

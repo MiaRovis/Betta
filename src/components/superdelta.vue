@@ -1,14 +1,13 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="naziv_ro"><b>Super Delta</b></p>
+<p id="nazivd"><b>Super Delta</b></p>
 </div>
 <div class="card-body p-0">
 <img id="superdelta" class="card-img-top" src="@/assets/superdelta.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-
-
+    <p>View more</p>
 </div>
 </div>
 </template>
@@ -20,17 +19,17 @@ export default{
 </script>
 
 <style lang="scss">
-#roza_slika{
+#superdelta{
     height:300px;
-    width: 140px;
+    width: 350px;
 }
 #opis_ro{
     margin:5px;
-    color:rgb(56, 87, 85);
+    color:rgb(93, 92, 165);
 }
-#naziv_ro{
+#nazivd{
     margin:5px;
-    color:rgb(56, 87, 85);
+    color:rgb(93, 92, 165);
     font-size:20px;
 }
 

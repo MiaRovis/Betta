@@ -3,37 +3,37 @@
   
       <div class="row">
         <div class="col">
-         <icon/> 
+         <superdelta/> 
         </div>
         <div class="col order-5">
-        <superdelta />
+        <veiltail />
         </div>
         <div class="col order-1">
-          
+        <plakat />
         </div>
       </div>
-
+      
       <div class="row">
         <div class="col">
-          
+         <feathertail /> 
         </div>
         <div class="col order-5">
-         
+         <fantail />
         </div>
         <div class="col order-1">
-          
+          <doubletail />
         </div>
       </div>
-
+      
       <div class="row">
         <div class="col">
-          
+          <halfmoon />
         </div>
         <div class="col order-5">
-         
+         <crowntail />
         </div>
         <div class="col order-1">
-          
+          <combtail />
         </div>
       </div>
 
@@ -42,11 +42,27 @@
 
 <script>
 import superdelta from '@/components/superdelta.vue';
+import veiltail from '@/components/veiltail.vue';
+import halfmoon from '@/components/halfmoon.vue';
+import combtail from '@/components/combtail.vue';
+import crowntail from '@/components/crowntail.vue';
+import doubletail from '@/components/doubletail.vue';
+import fantail from '@/components/fantail.vue';
+import feathertail from '@/components/feathertail.vue';
+import plakat from '@/components/plakat.vue';
 
 export default{
   name: 'Betta Offer',
   components: {
-    superdelta
+    superdelta,
+    veiltail,
+    plakat,
+    halfmoon,
+    combtail,
+    crowntail,
+    doubletail,
+    fantail,
+    feathertail
   },
 };
 
@@ -56,10 +72,10 @@ export default{
 <style lang="scss">
 .card{
 margin: 10px;
-background-color:#c1c0c4fb;
+background-color:rgb(216, 209, 231);
 }
 #sl{
-color:rgb(12, 97, 86);
+color:rgb(216, 209, 231);
 font-size:15px;
 
 }

@@ -26,6 +26,16 @@ const routes = [
     component: () => import(/* webpackChunkName: "ShampooOffer" */ '../views/BettaOffer.vue')
   },
   {
+    path: '/RasboraOffer',
+    name: 'RasboraOffer',
+    component: () => import(/* webpackChunkName: "ShampooOffer" */ '../views/RasboraOffer.vue')
+  },
+  {
+    path: '/TetraOffer',
+    name: 'TetraOffer',
+    component: () => import(/* webpackChunkName: "ShampooOffer" */ '../views/TetraOffer.vue')
+  },
+  {
     path: '/signup',
     name: 'signup',
     component: () => import(/* webpackChunkName: "signup" */ '../views/signup.vue')
