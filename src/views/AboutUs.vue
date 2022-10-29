@@ -1,29 +1,26 @@
 <template>
   <div>
  <h1 id="naslov"> Welcome to <i>Scape</i>!</h1>
-
- <h4 id="naslov1">opis stranice</h4>
- <br/>
  <br/>
  
- <h4 id="naslov2"><i><b>naslov2</b></i></h4>
+ <h4 id="naslov2"><i><b>How we function</b></i></h4>
  <div id="opis" class="multiline">
-  opis2<br/>
-  opis3<br/>
-  opis4<br/>
-  opis5
+  Here, at Scape, we offer introduction and detailed information about care and charachteristics of 3 types of aquarium fish:<br/>
+  <b>Siamese fighter fish</b> also known as<b> Betta</b> <br/>
+  <b>Rasbora fish</b>  <br/>
+  and <b>Tetra fish</b> 
  </div>
  <br/>
- <h4 id="naslov3"><i><b>naslov 2</b></i></h4>
+ <h4 id="naslov3"><i><b>Our blog</b></i></h4>
  <div id="opis" class="multiline">
-  opis6<br/>
-  opis7
+ <i>Our blog</i> option is a part of our page where our users can publish images of their aquarium and their fish. <br/>
+  Also, users can leave comments giving advice or words of support to image owner.
  </div>
  <br/>
- <h4 id="naslov2"><i><b>How do I publish my own photo?</b></i></h4>
+ <h4 id="naslov2"><i><b>How do i publish?</b></i></h4>
  <div id="opis" class="multiline">
   You can post your fish by, firstly, loging in or signing up if you don't already have an account.<br/>
-  drugi korak
+  The next step is opening the blog and clicking on <b><i>add photo</i></b>. Once you choose the photo, and open in on the website, by clicking on <b><i>publish</i></b>, the photo will be published on the blog.
  <p></p>
 </div>
 <br/>
