@@ -38,8 +38,9 @@
     </template>
 
 <script>
-    import { firebase } from '@/firebase';
-    import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import store from "@/store";
+import {firebase} from "@/firebase";
+import router from "@/router";
 
     export default {
         name: "signup",
@@ -53,11 +54,14 @@
         },
     methods:{
         signup(){
-            const auth = getAuth();
-                createUserWithEmailAndPassword(auth, this.username, this.password).then(
-                    function(){
+            firebase
+            .auth()
+            .createUserWithEmailAndPassword(this.username, this.password)
+            .then(
+                    function(error){
                         console.log('uspješna registracija');
                     });
+
                },
             },
         };
