@@ -33,11 +33,8 @@ document.body.style.backgroundColor="rgb(216, 209, 231)";
 import store from '@/store';
 import router from '@/router';
 import { firebase } from '@/firebase';
-import { signOut, getAuth, onAuthStateChanged } from "firebase/auth";
 
-const auth = getAuth();
-
-onAuthStateChanged(auth, user => {
+firebase.auth().onAuthStateChanged(user => {
   
   const currentRoute = router.currentRoute;
   
@@ -46,7 +43,11 @@ onAuthStateChanged(auth, user => {
   }
   else{
     console.log("**** no user");
-    store.currentUser = null;    
+    store.currentUser = null;  
+    
+    if (currentRoute.meta.needsUser) {
+  router.push({name:"login"});
+ }
   }
 
 });
@@ -60,7 +61,7 @@ export default {
   },
   methods: {
     logout(){
-      const auth = getAuth().signOut().then(() => {
+      firebase.auth().signOut().then(() => {
           this.$router.push({ name: 'login' });
       });
     },

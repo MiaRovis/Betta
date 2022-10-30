@@ -33,8 +33,9 @@
 
 <script>
 
-import { firebase } from '@/firebase';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import store from "@/store";
+import {firebase} from "@/firebase";
+import router from "@/router";
 
 export default{
     name:'login',
@@ -48,9 +49,10 @@ export default{
         login(){
             console.log('login...' + this.username);
 
-            const auth = getAuth();
-                signInWithEmailAndPassword(auth, this.username, this.password)
-                .then((result) => {
+            firebase
+            .auth()
+            .signInWithEmailAndPassword(this.username, this.password)
+            .then((result) => {
                     console.log('uspjesna prijava', result);
 
                     this.$router.replace({name: "home"});
