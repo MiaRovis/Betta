@@ -14,7 +14,7 @@
  <h4 id="naslov3"><i><b>Our blog</b></i></h4>
  <div id="opis" class="multiline">
  <i>Our blog</i> option is a part of our page where our users can publish images of their aquarium and their fish. <br/>
-  Also, users can leave comments giving advice or words of support to image owner.
+  Also, users can leave comments giving advice or words by commenting under other users' photos.
  </div>
  <br/>
  <h4 id="naslov2"><i><b>How do i publish?</b></i></h4>
