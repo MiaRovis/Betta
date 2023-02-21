@@ -8,8 +8,8 @@
       <p id="naziv"><i><b>Scape</b></i></p>
 
   <div class="collapse navbar-collapse" id="navbarToggledDemo02">
-    <router-link id="link" to="/AboutUs">About Us</router-link>
-    <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto">
+      <router-link id="link" to="/AboutUs">About Us</router-link>
       <router-link  id="link" to="/BettaOffer">Bettas</router-link>
       <router-link  id="link" to="/TetraOffer">Tetras</router-link>
       <router-link  id="link" to="/RasboraOffer">Rasboras</router-link>
