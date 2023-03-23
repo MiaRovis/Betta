@@ -7,7 +7,7 @@
 <img id="crowntail" class="card-img-top" src="@/assets/crowntail.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <p>View more</p>
+    <router-link id="lk" to="/OpisBetta">About the species</router-link>
 </div>
 </div>
 </template>
@@ -27,6 +27,8 @@ export default{
     margin:5px;
     color:rgb(93, 92, 165);
     font-size:20px;
+}#lk{
+    color:rgb(93, 92, 165);
 }
 
 </style>

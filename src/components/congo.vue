@@ -7,7 +7,7 @@
 <img id="congo" class="card-img-top" src="@/assets/congo.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <p>View more</p>
+    <router-link id="lk" to="/OpisTetra">About the species</router-link>
 </div>
 </div>
 </template>
@@ -28,5 +28,7 @@ export default{
     color:rgb(93, 92, 165);
     font-size:20px;
 }
-
+#lk{
+    color:rgb(93, 92, 165);
+}
 </style>

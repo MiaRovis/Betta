@@ -55,6 +55,24 @@ const routes = [
     name: 'Blog',
     component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/Blog.vue')
   },
+  {
+    path: '/OpisBetta',
+    name: 'OpisBetta',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/OpisBetta.vue')
+  },
+  {
+    path: '/OpisTetra',
+    name: 'OpisTetra',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/OpisTetra.vue')
+  },
+  
+  {
+    path: '/OpisRas',
+    name: 'OpisRas',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/OpisRas.vue')
+  },
+  
+  
   
 
   

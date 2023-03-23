@@ -7,7 +7,7 @@
 <img id="kubotai" class="card-img-top" src="@/assets/kubotai.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <p>View more</p>
+    <router-link id="lk" to="/OpisRas">About the species</router-link>
 </div>
 </div>
 
@@ -29,5 +29,9 @@ export default{
     color:rgb(93, 92, 165);
     font-size:20px;
 }
+#lk{
+    color:rgb(93, 92, 165);
+}
+
 
 </style>
