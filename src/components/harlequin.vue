@@ -7,7 +7,7 @@
 <img id="harlequin" class="card-img-top" src="@/assets/harlequin.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisRas">About the species</router-link>
+    <router-link id="lk" to="/opishar">About the species</router-link>
 </div>
 </div>
 </template>

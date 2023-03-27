@@ -7,7 +7,7 @@
 <img id="strawberry" class="card-img-top" src="@/assets/strawberry.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisRas">About the species</router-link>
+    <router-link id="lk" to="/opisberry">About the species</router-link>
 </div>
 </div>
 </template>

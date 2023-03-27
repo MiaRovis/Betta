@@ -7,7 +7,7 @@
 <img id="neon" class="card-img-top" src="@/assets/neon.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisTetra">About the species</router-link>
+    <router-link id="lk" to="/opisneon">About the species</router-link>
 </div>
 </div>
 </template>

@@ -98,6 +98,105 @@ const routes = [
     name: 'opisfeather',
     component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opisfeather.vue')
   },
+  {
+    path: '/opisblack',
+    name: 'opisblack',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisblack.vue')
+  },
+  {
+    path: '/opisblood',
+    name: 'opisblood',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisblood.vue')
+  },
+  {
+    path: '/opiscar',
+    name: 'opiscar',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opiscar.vue')
+  },
+  {
+    path: '/opiscongo',
+    name: 'opiscongo',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opiscongo.vue')
+  },
+  {
+    path: '/opisdiamond',
+    name: 'opisdiamond',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisdiamond.vue')
+  },
+  {
+    path: '/opisember',
+    name: 'opisember',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisember.vue')
+  },
+  {
+    path: '/opisneon',
+    name: 'opisneon',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisneon.vue')
+  },
+  {
+    path: '/opisrummy',
+    name: 'opisrummy',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisrummy.vue')
+  },
+  {
+    path: '/opisserpae',
+    name: 'opisserpae',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiTetra/opisserpae.vue')
+  },
+  {
+    path: '/opisaxel',
+    name: 'opisaxel',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisaxel.vue')
+  },
+  {
+    path: '/opisberry',
+    name: 'opisberry',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisberry.vue')
+  },
+  {
+    path: '/opisgal',
+    name: 'opisgal',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisgal.vue')
+  },
+  {
+    path: '/opishar',
+    name: 'opishar',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opishar.vue')
+  },
+  {
+    path: '/opiskubo',
+    name: 'opiskubo',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opiskubo.vue')
+  },
+  {
+    path: '/opisline',
+    name: 'opisline',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisline.vue')
+  },
+  {
+    path: '/opispor',
+    name: 'opispor',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opispor.vue')
+  },
+  {
+    path: '/opissci',
+    name: 'opissci',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opissci.vue')
+  },
+  {
+    path: '/opisside',
+    name: 'opisside',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisside.vue')
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 
   

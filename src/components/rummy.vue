@@ -7,7 +7,7 @@
 <img id="rummy" class="card-img-top" src="@/assets/rummy.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisTetra">About the species</router-link>
+    <router-link id="lk" to="/opisrummy">About the species</router-link>
 </div>
 </div>
 </template>

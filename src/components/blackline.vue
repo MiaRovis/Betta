@@ -7,7 +7,7 @@
 <img id="blackline" class="card-img-top" src="@/assets/blackline.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisRas">About the species</router-link>
+    <router-link id="lk" to="/opisline">About the species</router-link>
 </div>
 </div>
 </template>
