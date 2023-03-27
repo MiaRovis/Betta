@@ -11,9 +11,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("../views/AboutUs.vue"),
-       
-    
+    component: () => import("../views/AboutUs.vue"), 
   },
   {
     path: '/AboutUs',
@@ -56,21 +54,58 @@ const routes = [
     component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/Blog.vue')
   },
   {
-    path: '/OpisBetta',
-    name: 'OpisBetta',
-    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/OpisBetta.vue')
+    path: '/opiscomb',
+    name: 'opiscomb',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opiscomb.vue')
   },
   {
-    path: '/OpisTetra',
-    name: 'OpisTetra',
-    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/OpisTetra.vue')
+    path: '/opisveil',
+    name: 'opisveil',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opisveil.vue')
+  },
+  {
+    path: '/opissdelta',
+    name: 'opissdelta',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opissdelta.vue')
+  },
+  {
+    path: '/opisdouble',
+    name: 'opisdouble',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opisdouble.vue')
+  },
+  {
+    path: '/opisplakat',
+    name: 'opisplakat',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opisplakat.vue')
+  },{
+    path: '/opiscrown',
+    name: 'opiscrown',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opiscrown.vue')
+  },
+  {
+    path: '/opishalf',
+    name: 'opishalf',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opishalf.vue')
+  },
+  {
+    path: '/opisfan',
+    name: 'opisfan',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opisfan.vue')
+  },
+
+  {
+    path: '/opisfeather',
+    name: 'opisfeather',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiBetta/opisfeather.vue')
   },
   
-  {
-    path: '/OpisRas',
-    name: 'OpisRas',
-    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/OpisRas.vue')
-  },
+
+  
+
+
+
+
+
   
   
   

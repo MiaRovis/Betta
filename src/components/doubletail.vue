@@ -1,13 +1,13 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="nazivdb"><b>Crown Tail</b></p>
+<p id="nazivdb"><b>Double Tail</b></p>
 </div>
 <div class="card-body p-0">
 <img id="doubletail" class="card-img-top" src="@/assets/doubletail.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisBetta">About the species</router-link>
+    <router-link id="lk" to="/opisdouble">About the species</router-link>
 </div>
 </div>
 </template>

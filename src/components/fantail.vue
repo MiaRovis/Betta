@@ -7,7 +7,7 @@
 <img id="fantail" class="card-img-top" src="@/assets/fantail.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisBetta">About the species</router-link>
+    <router-link id="lk" to="/opisfan">About the species</router-link>
 </div>
 </div>
 </template>

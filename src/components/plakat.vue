@@ -7,7 +7,7 @@
 <img id="plakat" class="card-img-top" src="@/assets/plakat.jpg"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <router-link id="lk" to="/OpisBetta">About the species</router-link>
+    <router-link id="lk" to="/opisplakat">About the species</router-link>
 </div>
 </div>
 </template>
