@@ -20,7 +20,7 @@
        <br/>
       <h4 id="naslov1"><i><b>Community tank</b></i></h4>
       <div id="opis" class="multiline">
-        <p>Rasboras are very peaceful and non agressive towards other fish due to their small size and timid nature.<br/>
+        <p>Rasboras are  not agressive towards other fish due to their small size and timid nature.<br/>
         They should not be kept with fish with long fins or tails, such as betta fish, because they are fin nippers.<br/>
     Also, do not keep them with fish larger than them as they will get bullied and hurt.<br/>
     They do best alone, but can easily be kept with tetras and any bottom-dwelling fish.</p>
