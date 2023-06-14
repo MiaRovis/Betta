@@ -51,6 +51,11 @@
 import ribice1 from '@/components/ribice1.vue';
 import akvarij1 from '@/components/akvarij1.vue';
 import zlatne1 from '@/components/zlatne1.vue';
+
+import store from '@/store';
+import { firebase } from '@/firebase';
+import { db } from '@/firebase';
+import { throwStatement } from '@babel/types';
  
  export default{
    name: 'Blog',
@@ -62,10 +67,36 @@ import zlatne1 from '@/components/zlatne1.vue';
    },
    data: function() {
     return{
-        
-    }
+      store,
+      newImageDescription:"",
+      newImageUrl:"",
+      
+    };
 
-   }
+   },
+ methods: {
+  postNewImage(){
+    const imageUrl = this.newImageUrl;
+    const imageDescription = this.newImageDescription;
+
+    db.collection("Posts").add({
+      url: imageUrl,
+      desc: imageDescription,
+      email: store.currentUser,
+      posted_at: Date.now(),
+    })
+    .then((doc) => {
+      console.log("Spremljeno", doc);
+      this.newImageDescription = '';
+      this.newImageUrl = '';
+    })
+    .catch((e) => {
+      console.error(e);
+    });
+
+  },
+
+ },
  };
 </script>
 

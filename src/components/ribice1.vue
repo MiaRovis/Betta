@@ -1,7 +1,7 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="nazivri1"><b>My beautfil mix</b></p>
+<p id="nazivri1"><b>My beautiful mix</b></p>
 </div>
 <div class="card-body p-0">
 <img id="ribice1" class="card-img-top" src="@/assets/ribice1.jpg"/>
