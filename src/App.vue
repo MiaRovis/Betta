@@ -14,7 +14,6 @@
       <router-link  id="link" to="/TetraOffer">Tetras</router-link>
       <router-link  id="link" to="/RasboraOffer">Rasboras</router-link>
       <router-link v-if="store.currentUser" id="link" to="/Blog">Our Blog</router-link> 
-      <router-link v-if="store.currentUser" id="link" to="/MyFavorites">My Favorites</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
       <a v-if="store.currentUser" href="#" @click="logout()" id="link2">Log-out</a>
