@@ -1,4 +1,4 @@
-# Betta
+# Scape
 
 ## Project setup
 ```
