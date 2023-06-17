@@ -32,13 +32,13 @@
    
    <div class="row">
      <div class="col">
-      <ribice1/> 
+      <ribice1 v-for="card in cards" :key="card" /> 
      </div>
      <div class="col order-5">
-     <akvarij1 />
+     <akvarij1 v-for="card in cards" :key="card"/>
      </div>
      <div class="col order-1">
-     <zlatne1 />
+     <zlatne1 v-for="card in cards" :key="card"/>
      </div>
    </div>
 
@@ -56,6 +56,12 @@ import store from '@/store';
 import { firebase } from '@/firebase';
 import { db } from '@/firebase';
 import { throwStatement } from '@babel/types';
+
+let cards = [];
+
+cards = [ 
+  'https://image.dnevnik.hr/media/images/1920x1080/Mar2022/62277271.jpg',
+]
  
  export default{
    name: 'Blog',
@@ -67,6 +73,7 @@ import { throwStatement } from '@babel/types';
    },
    data: function() {
     return{
+      cards: cards,
       store,
       newImageDescription:"",
       newImageUrl:"",
