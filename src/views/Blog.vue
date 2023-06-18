@@ -26,6 +26,7 @@
     <button id="forma2" type="submit" class="btn btn-secondary ml-2">Post
    image</button>
     </form>
+    <Kartica v-for="card in filteredCards" :key="card" :info="card"/>
     
  </div>
  </div>
@@ -37,9 +38,11 @@
 import store from '@/store';
 import { firebase } from '@/firebase';
 import { db } from '@/firebase';
-import { throwStatement } from '@babel/types';
 
- 
+import BlogPost from '@/components/BlogPost.vue';
+
+ let cards=[];
+
  export default{
   name:"Blog",
   data: function() {
@@ -50,6 +53,12 @@ import { throwStatement } from '@babel/types';
       newImageUrl:"",
       
     };
+  },
+  computed:{
+    filteredCards(){
+      return cards;
+
+    },
   },
 
     mounted(){
@@ -103,6 +112,9 @@ import { throwStatement } from '@babel/types';
   },
 
  },
+ components: {
+    BlogPost,
+  },
  };
 </script>
 

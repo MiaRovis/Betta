@@ -4,10 +4,10 @@
 {{info.description }}
 </div>
 <div class="card-body p-0">
-<img id="kartica" class="card-img-top" :src="info.url"/>
+<img id="blogg" class="card-img-top" :src="info.url"/>
 </div>
 <div class="card-footer text-muted text-left">
-    {{ info.time | moment }}
+{{ info.time }}
 </div>
 </div>
 </template>
@@ -18,12 +18,13 @@ import store from '@/store.js';
 import { db, storage } from '@/firebase.js';
 
 export default{
+name: BlogPost,
 props: ["info"]
 };
 </script>
 
 <style lang="scss">
-#kartica{
+#blogg{
     height:300px;
     width: 350px;
 }
