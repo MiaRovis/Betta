@@ -1,29 +1,33 @@
 <template>
     <div class="card">
 <div class="card-header text-left">
-<p id="nazivri1"><b>My beautiful mix</b></p>
+{{info.description }}
 </div>
 <div class="card-body p-0">
-<img id="ribice1" class="card-img-top" src="@/assets/ribice1.jpg"/>
+<img id="kartica" class="card-img-top" :src="info.url"/>
 </div>
 <div class="card-footer text-muted text-left">
-    <p>10h ago</p>
+    {{ info.time | moment }}
 </div>
 </div>
 </template>
 
 <script>
+import { firebase } from '@/firebase';
+import store from '@/store.js';
+import { db, storage } from '@/firebase.js';
+
 export default{
- name: 'ribice1',
+props: ["info"]
 };
 </script>
 
 <style lang="scss">
-#ribice1{
+#kartica{
     height:300px;
     width: 350px;
 }
-#nazivri1{
+#nazivk{
     margin:5px;
     color:rgb(93, 92, 165);
     font-size:20px;
