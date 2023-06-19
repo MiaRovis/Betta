@@ -27,7 +27,8 @@ export default{
     margin:5px;
     color:rgb(93, 92, 165);
     font-size:20px;
-}#lk{
+}
+#lk{
     color:rgb(93, 92, 165);
 }
 
