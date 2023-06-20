@@ -1,13 +1,14 @@
 <template>
 <div class="card text-center">
 <div id=nazivk class="card-header text-left">
-    {{ info.description }}
+{{ info.description }}
 </div>
 <div class="card-body p-0">
     <img id="blogg" class="card-img-top" :src="info.url"/>
 </div>
 <div class="card-footer text-muted text-left">
-{{ info.time }}
+{{ postedFromNow }}
+
 </div>
 </div>
  
@@ -16,10 +17,16 @@
 <script>
 import { firebase } from '@/firebase';
 import store from '@/store';
+import moment from "moment";
 
 export default {
     props: ['info'],
     name: 'BlogPost',
+    computed: {
+        postedFromNow(){
+            return moment(this.info.time).fromNow();
+        },
+    },
 };
 
 
