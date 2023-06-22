@@ -17,6 +17,7 @@
         placeholder="Enter the image URL"
         id="imageUrl"
       />
+      
     </div>
 
     <div id="forma" class="form-group">
@@ -61,9 +62,10 @@
  import { firebase } from '@/firebase';
  import BlogPost from '@/components/BlogPost.vue';
  
+ 
 // let hello = 'world'; -varijabla home ima vrijednost world
 
-let cards=[];
+//let cards=[];
 
 //cards = [
  
@@ -89,7 +91,7 @@ let db = firebase.firestore();
       store,
       newImageDescription:"",
       newImageUrl:"",
-      imageReference: null,
+      
     }
   },
 
@@ -139,8 +141,14 @@ db.collection('Posts')
 },
 
 postNewImage(){ 
+
   const imageUrl = this.newImageUrl;
   const imageDescription = this.newImageDescription;
+  
+  this.imageUrl.generateBlob((blobData) => {
+  let imageName = store.currentUser + "_" +Date.now() + '.png';
+
+  });
 
   db.collection("Posts")
   .add({
