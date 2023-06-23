@@ -184,6 +184,21 @@ const routes = [
     name: 'opisside',
     component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisside.vue')
   },
+  {
+    path: '/NewPost',
+    name: 'NewPost',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/NewPost.vue')
+  },
+  {
+    path: '/PostDetail',
+    name: 'PostDetail',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/PostDetail.vue')
+  },
+  {
+    path: '/Posts',
+    name: 'Posts',
+    component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/Posts.vue')
+  },
 ]
 
 const router = new VueRouter({

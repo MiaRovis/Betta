@@ -55,26 +55,6 @@
  import { firebase } from '@/firebase';
  import BlogPost from '@/components/BlogPost.vue';
  import {db, storage} from '@/firebase.js';
- 
- 
-// let hello = 'world'; -varijabla home ima vrijednost world
-
-//let cards=[];
-
-//cards = [
- 
-//{'url':'https://picsum.photos/id/1/400/400',
-//"description": "slika",
-//'time': 'prije nekoliko minuta'},
-//{'url':'https://picsum.photos/id/2/400/400',
-//"description": "slika2",
-//'time': 'sada'},
-//{'url':'https://picsum.photos/id/3/400/400',
-//"description": "slika3",
-//'time': 'prije nekoliko sati'},
-
-//]
-
 
  export default {
   name: 'Blog',
