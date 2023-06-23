@@ -2,9 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/AboutUs.vue';
 import { VueElement } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
 import store from '@/store';
 
+Vue.use(VueRouter);
 
 const routes = [
   
@@ -184,33 +184,13 @@ const routes = [
     name: 'opisside',
     component: () => import(/* webpackChunkName: "MyFavorites" */ '../views/opisiRasbora/opisside.vue')
   },
- 
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-
-
-
-
-
-  
-  
-  
-
-  
-  
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes,
+});
+
 
 export default router;

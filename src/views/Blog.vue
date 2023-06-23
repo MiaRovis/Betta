@@ -8,20 +8,17 @@
       <form @submit.prevent="postNewImage" class="form-inline mb-5">
       <div id="forma" class="form-group">   
         <form @submit.prevent="postNewImage" class="form-inline mb-5"></form>
-        <p id="objava"><b>To publish, pleaste enter a valid <i>url</i> and short <i>description</i></b></p>
-        <label for="imageUrl">Image URL</label>
-      <input
-        v-model="newImageUrl"
-        type="text"
-        class="form-control ml-2"
-        placeholder="Enter the image URL"
-        id="imageUrl"
-      />
+        <p id="objava"><b>To publish, pleaste upload a <u>picture</u> and add a short <u>description</u></b></p>
+        <label for="imageUrl"><b>Image URL</b></label>
+        <croppa :width="350" :height="250" placeholder="Upload" v-model="imageReference"> </croppa>
+<br/>
+      
       
     </div>
 
     <div id="forma" class="form-group">
-    <label for="imageDescription">Description</label>
+      <br/>
+    <label for="imageDescription"><b>Description</b></label>
       <input 
         v-model="newImageDescription"
         type="text"
@@ -61,6 +58,7 @@
  import store from '@/store';
  import { firebase } from '@/firebase';
  import BlogPost from '@/components/BlogPost.vue';
+ import {db, storage} from '@/firebase.js';
  
  
 // let hello = 'world'; -varijabla home ima vrijednost world
@@ -81,7 +79,6 @@
 
 //]
 
-let db = firebase.firestore();
 
  export default {
   name: 'Blog',
@@ -91,13 +88,14 @@ let db = firebase.firestore();
       store,
       newImageDescription:"",
       newImageUrl:"",
+      imageReference: null,
       
     }
   },
 
   computed:{
 
-    filteredCards(){
+  	filteredCards(){
       let termin = this.store.searchTerm;
       
       return this.cards.filter((card) => card.description.includes(termin));
@@ -141,36 +139,59 @@ db.collection('Posts')
 },
 
 postNewImage(){ 
-
+  
   const imageUrl = this.newImageUrl;
   const imageDescription = this.newImageDescription;
   
-  this.imageUrl.generateBlob((blobData) => {
-  let imageName = store.currentUser + "_" +Date.now() + '.png';
+  this.imageReference.generateBlob((blobData) => {
+    console.log(blobData);
 
-  });
+    let imageName = "posts/" + store.currentUser + "/" + Date.now() + '.png';
+
+    storage
+  .ref(imageName)
+  .put(blobData)
+  .then((result) => { //čuva this
+    result.ref.getDownloadURL().then((url) => {
+    console.log("Javni link", url);
+
+  const imageDescription = this.newImageDescription;
 
   db.collection("Posts")
   .add({
-    url: imageUrl,
+    url: url,
     desc: imageDescription,
     email: store.currentUser,
     posted_at: Date.now(),
   })
+
   .then((doc) => {
     console.log("Spremljeno", doc);
     this.newImageDescription = '';
-    this.newImageUrl = '';
+    this.imageReference.remove();
     this.getPosts();
   })
+
   .catch((e) => {
     console.error(e);
   });
 
-},
+  }).catch(e => {
+    console.error(e);
+  });
 
-},
+  })
 
+  .catch(e => {
+    console.error(e)
+  });
+
+  });
+    
+  return;
+
+    },
+  },
 };
 
  
@@ -202,4 +223,5 @@ postNewImage(){
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:small;
 }
+
 </style>
