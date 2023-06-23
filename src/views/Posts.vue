@@ -26,7 +26,7 @@ export default {
     computed: {
     filteredCards() {
     return this.cards.filter(card =>
-   card.title.includes(this.searchTerm));
+    card.title.includes(this.searchTerm));
     }
     },
     name: "posts",

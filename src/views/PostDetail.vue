@@ -1,5 +1,7 @@
 <template>
-    <div v-if="card"></div>
+    <div v-if="card">
+    <BlogPost :info="card" :showcomments="true"/>
+</div>
 
 </template>
 
@@ -26,7 +28,6 @@ import store from '@/store';
     })
     },
     name: "post-detail",
-
     components: {
         BlogPost
     },

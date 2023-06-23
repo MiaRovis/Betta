@@ -2,7 +2,7 @@
  <div class="row">
 
   <div class="col-8">
-    <blog-post v-for="card in filteredCards" :key="card.id" :info="card"/>
+    <blog-post v-for="card in filteredCards" :key="card.id" :info="card" :showcomments="true"/>
     </div>
     <div class="col-3">
       <img id="ucitavanje" v-if="loading" :src="require('@/assets/gif3.gif')" />
@@ -43,6 +43,7 @@
 
     </div>
   </form>
+
 
   
  </div>

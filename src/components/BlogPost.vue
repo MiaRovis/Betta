@@ -14,7 +14,7 @@
 <div id="komentari" class="comments list-group" v-if="showcomments">
    <a :key="c.posted_at" v-for="c in comments" href="#"
   class="animate list-group-item list-group-item-action flex-column alignitems-start">
-   <div class="d-flex w-100 justify-content-between">
+   <div id="prikazani" class="d-flex w-100 justify-content-between">
    <small style="font-style: italic;font-size:5px">{{ c.posted_at | moment }} by {{ c.email }}
   </small>
    </div>
@@ -117,5 +117,6 @@ export default {
 #btnzakom{
     margin-top:2px;
 }
+
 
 </style>
