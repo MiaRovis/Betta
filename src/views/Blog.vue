@@ -5,19 +5,18 @@
     <blog-post v-for="card in filteredCards" :key="card.id" :info="card"/>
     </div>
     <div class="col-3">
-      <form @submit.prevent="postNewImage" class="form-inline mb-5">
+      <img id="ucitavanje" v-if="loading" :src="require('@/assets/gif3.gif')" />
+      <form v-if="!loading" @submit.prevent="postNewImage" class="form-inline mb-5">
       <div id="forma" class="form-group">   
         <form @submit.prevent="postNewImage" class="form-inline mb-5"></form>
         <p id="objava"><b>To publish, pleaste upload a <u>picture</u> and add a short <u>description</u></b></p>
         <label for="imageUrl"><b>Image URL</b></label>
         <croppa :width="350" :height="250" placeholder="Upload" v-model="imageReference"> </croppa>
-<br/>
-      
-      
-    </div>
+     <br/>
+   </div>
 
-    <div id="forma" class="form-group">
-      <br/>
+  <div id="forma" class="form-group">
+    <br/>
     <label for="imageDescription"><b>Description</b></label>
       <input 
         v-model="newImageDescription"
@@ -26,19 +25,15 @@
         placeholder="Enter the image description"
         id="imageDescription"
        />
-    </div>
+   </div>
 
     <button id="forma2" type="submit" class="btn btn-secondary ml-2">Post image</button>
-  </form>
-
-  <form id="search">
     <div id="pretraga">
-  <b>To filter your search, please enter a <i>keyword</i></b>
+    <b>To filter your search, please enter a <i>keyword</i></b>
     </div>
 
     <div id="forma">
       <br/>
-
     <input 
     v-model="store.searchTerm" 
     class="form-control mr-sm-2" 
@@ -49,6 +44,7 @@
     </div>
   </form>
 
+  
  </div>
  </div>
  
@@ -89,6 +85,7 @@
       newImageDescription:"",
       newImageUrl:"",
       imageReference: null,
+      loading: false,
       
     }
   },
@@ -113,14 +110,14 @@
 
   methods: {
 
-getPosts(){
-console.log("firebase dohvat..")
+  getPosts(){
+  console.log("firebase dohvat..")
 
-db.collection('Posts')
-.orderBy("posted_at", 'desc')
-.limit(15)
-.get()
-.then((query) => {
+  db.collection('Posts')
+  .orderBy("posted_at", 'desc')
+  .limit(15)
+  .get()
+  .then((query) => {
   this.cards = [];
   query.forEach((doc)=> {
     
@@ -138,66 +135,57 @@ db.collection('Posts')
 
 },
 
-postNewImage(){ 
+getImage() {
+ //Promise based, omotač 
   
-  const imageUrl = this.newImageUrl;
-  const imageDescription = this.newImageDescription;
+    return new Promise((resolveFn, errorFn) => {
+    
+    this.imageReference.generateBlob((data) => {
+      resolveFn(data);
+
+     });
+   });
+ },
+
+
+async postNewImage(){ 
   
-  this.imageReference.generateBlob((blobData) => {
-    console.log(blobData);
+   //const imageUrl = this.newImageUrl;
+   //this.imageReference.generateBlob((blobData) => {
 
-    let imageName = "posts/" + store.currentUser + "/" + Date.now() + '.png';
+   //asinkrono
+   try{
+   this.loading=true;
+   let blobData = await this.getImage()
+   let imageName = "posts/" + store.currentUser + "/" + Date.now() + '.png';
+   let result = await storage.ref(imageName).put(blobData)
+   let url = await result.ref.getDownloadURL(); //Promise
 
-    storage
-  .ref(imageName)
-  .put(blobData)
-  .then((result) => { //čuva this
-    result.ref.getDownloadURL().then((url) => {
-    console.log("Javni link", url);
+   //sinkrono
+   console.log("Public link", url);
+   const imageDescription = this.newImageDescription;
 
-  const imageDescription = this.newImageDescription;
-
-  db.collection("Posts")
-  .add({
+   //asinkrono
+   let doc = await db.collection("Posts").add({
     url: url,
     desc: imageDescription,
     email: store.currentUser,
     posted_at: Date.now(),
-  })
+    });
 
-  .then((doc) => {
-    console.log("Spremljeno", doc);
-    this.newImageDescription = '';
-    this.imageReference.remove();
+    console.log("Saved", doc);
+    //this.newImageDescription = '';
+    //this.imageReference.remove();
+
     this.getPosts();
-  })
-
-  .catch((e) => {
-    console.error(e);
-  });
-
-  }).catch(e => {
-    console.error(e);
-  });
-
-  })
-
-  .catch(e => {
-    console.error(e)
-  });
-
-  });
-    
-  return;
-
+    }
+    catch (e) {
+      console.error("Faulty", e);
+      }
+      this.loading=false;
     },
   },
 };
-
- 
-
-
-
 </script>
 
 <style lang="scss">
@@ -222,6 +210,13 @@ postNewImage(){
   text-align:center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:small;
+}
+#ucitavanje{
+  width:300px;
+  height:300px;
+  margin-top:30px;
+  margin-left:80px;
+  
 }
 
 </style>
