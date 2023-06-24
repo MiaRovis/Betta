@@ -10,7 +10,7 @@
       <div id="forma" class="form-group">   
         <form @submit.prevent="postNewImage" class="form-inline mb-5"></form>
         <p id="objava"><b>To publish, pleaste upload a <u>picture</u> and add a short <u>description</u></b></p>
-        <label for="imageUrl"><b>Image URL</b></label>
+        
         <croppa :width="350" :height="250" placeholder="Upload" v-model="imageReference"> </croppa>
      <br/>
    </div>
