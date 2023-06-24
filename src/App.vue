@@ -10,9 +10,9 @@
   <div class="collapse navbar-collapse" id="navbarToggledDemo02">
         <ul class="navbar-nav ml-auto">
       <router-link id="link" to="/AboutUs">About Us</router-link>
-      <router-link  id="link" to="/BettaOffer">Bettas</router-link>
-      <router-link  id="link" to="/TetraOffer">Tetras</router-link>
-      <router-link  id="link" to="/RasboraOffer">Rasboras</router-link>
+      <router-link v-if="store.currentUser" id="link"  to="/BettaOffer">Bettas</router-link>
+      <router-link v-if="store.currentUser" id="link"  to="/TetraOffer">Tetras</router-link>
+      <router-link v-if="store.currentUser" id="link"  to="/RasboraOffer">Rasboras</router-link>
       <router-link v-if="store.currentUser" id="link" to="/Blog">Our Blog</router-link> 
       <router-link v-if="!store.currentUser" id="link2" to="/signup">Sign-Up</router-link>
       <router-link v-if="!store.currentUser" id="link2" to="/login">Log-in</router-link>
